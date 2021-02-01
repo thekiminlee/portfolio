@@ -3,11 +3,11 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../assets/style/js/global';
 import { lightTheme, darkTheme } from '../assets/style/js/theme';
 
-import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined'
+import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 import NightsStayOutlinedIcon from '@material-ui/icons/NightsStayOutlined';
 
-const lightIcon = <WbSunnyOutlinedIcon htmlColor="#FFCA33"/>
-const darkIcon = <NightsStayOutlinedIcon htmlColor="#34495E"/>
+const lightIcon = <WbSunnyOutlinedIcon fontSize="large" htmlColor="#FFCA33"/>
+const darkIcon = <NightsStayOutlinedIcon fontSize="large" htmlColor="#34495E"/>
 
 class ToggleTheme extends Component {
     constructor(props) {
@@ -39,10 +39,10 @@ class ToggleTheme extends Component {
 
     render() {
         return (
-            <div style={{padding:10}}>
+            <div style={{padding:10, position:'absolute', zIndex:1}}>
                 <ThemeProvider theme={this.state.theme}>
                     <GlobalStyles/>
-                    <button style={{border:'none', background:'none', cursor:'pointer'}} onClick={this._toggle}>
+                    <button id="toggle" style={{border:'none', background:'none', cursor:'pointer', width: '5vmin', height: '5vmin'}} onClick={this._toggle}>
                         {this.state.icon}
                     </button>
                 </ThemeProvider>

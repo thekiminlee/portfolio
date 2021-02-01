@@ -1,15 +1,17 @@
 import React from 'react';
 
-import Main from './views/main.view'
+import Main from './views/main.view.jsx'
 
-import ToggleTheme from './components/ToggleTheme.component'
+import ToggleTheme from './components/ToggleTheme.component.jsx'
 
 import 'bootstrap/dist/css/bootstrap.css'
+import './assets/style/css/App.scss'
 import 'bootstrap/dist/js/bootstrap.bundle.js'
+
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <ToggleTheme/>
       <Main/>
       
