@@ -113,8 +113,6 @@ class About extends React.Component {
     }
 
     render() {
-        console.log(this.state.open)
-        console.log(this.state.timeout)
         return (
             <Modal 
                 className="d-flex align-items-center justify-content-center"

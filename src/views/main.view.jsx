@@ -76,21 +76,21 @@ class Main extends Component {
     }
 
     _openAbout = () => {
-        console.log("open about")
+        
         this.setState({
             showAbout: true,
         })
     }
 
     _closeAbout = () => {
-        console.log("close about")
+        
         this.setState({
             showAbout: false,
         })
     }
 
     render() {
-        console.log('render')
+        
         return (
             <div className='container'>
                 <div className={"d-flex flex-column align-items-center justify-content-center"} style={{height: "100vh"}}>
