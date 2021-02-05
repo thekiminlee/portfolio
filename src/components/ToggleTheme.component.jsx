@@ -6,8 +6,8 @@ import { lightTheme, darkTheme } from '../assets/style/js/theme';
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 import NightsStayOutlinedIcon from '@material-ui/icons/NightsStayOutlined';
 
-const lightIcon = <WbSunnyOutlinedIcon fontSize="large" htmlColor="#FFCA33"/>
-const darkIcon = <NightsStayOutlinedIcon fontSize="large" htmlColor="#34495E"/>
+const lightIcon = <WbSunnyOutlinedIcon style={{fontSize: '3vmin'}} htmlColor="#FFCA33"/>
+const darkIcon = <NightsStayOutlinedIcon style={{fontSize: '3vmin'}} htmlColor="#34495E"/>
 
 class ToggleTheme extends Component {
     constructor(props) {
